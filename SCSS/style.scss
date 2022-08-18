@@ -1,14 +1,18 @@
 // imports //
-@import './vars';
-@import './assets';
-@import './mixins';
-@import './nav';
-@import './header';
-@import './DVBE';
+@import "./vars";
+@import "./assets";
+@import "./mixins";
+@import "./nav";
+@import "./header";
+@import "./DVBE";
+@import "./two_points";
+@import "./components";
 
 body {
-    max-width: 1920px;
-   min-width: 340px;
+  max-width: 1920px;
+  min-width: 340px;
 }
 
-
+h2 {
+    font-size: 35px;
+}

@@ -7,14 +7,18 @@ nav {
   background: $color-blue;
 
   .logo {
+    margin-left: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
     .logo-img1 {
-      width: 200px;
-      margin-left: 30px;
+      width: 300px;
     }
 
     .logo-img2 {
-      width: 60px;
-      margin-left: 30px;
+      width: 70px;
+      height: 70px;
     }
   }
 
@@ -109,15 +113,13 @@ nav {
 @media screen and(max-width: 1100px ) {
   nav {
     .logo {
-
       .logo-img1 {
-        width: 150px;
-        margin-left: 20px;
+        width: 200px;
       }
 
       .logo-img2 {
         width: 45px;
-        margin-left: 20px;
+        height: 45px;
       }
     }
 
@@ -146,6 +148,20 @@ nav {
 
   nav {
     height: 10vh;
+
+    .logo {
+      margin-left: 0px;
+      transform: translateX(-3%);
+
+      .logo-img1 {
+        width: 200px;
+      }
+
+      .logo-img2 {
+        width: 45px;
+        height: 45px;
+      }
+    }
 
     .burger {
       display: none;
@@ -182,6 +198,10 @@ nav {
           color: rgb(255, 255, 255);
           font-size: 20px;
         }
+      }
+
+      .--border {
+        margin-right: 0px;
       }
     }
 

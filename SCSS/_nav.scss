@@ -1,16 +1,13 @@
-
-
-
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-height: 15vh;
+    height: 15vh;
+    min-height: 10vh;
     background: $color-blue;
     
 
     .logo {
-        
         
         .logo-img1 {
             width: 200px;
@@ -46,6 +43,10 @@ nav {
                 text-decoration: none;
                 color: white;
                 font-size: 20px;
+
+                &:hover {
+                    text-decoration: underline;
+                }
             }
         }
 
@@ -57,6 +58,23 @@ nav {
             justify-content: center;
             align-items: center;
             border-radius: 15px;
+            transition: all 0.2s;
+            margin-right: 20px;
+
+            &:hover {
+                transform: scale(1.05);
+                background: white
+            }
+
+            &:hover a{
+                
+                    text-decoration: none;
+                    color: $color-blue;     
+            }
+
+            a {
+                font-weight: 700;
+            }
         }
     }
 }
@@ -113,17 +131,7 @@ nav {
                 margin-left: 30px;
             }
         }
-    
-        .burger {
-            display: none;
-            .line {
-                width: 25px;
-                height: 4px;
-                margin-bottom: 5px;
-                background: white;
-            }
-        }
-    
+     
         .nav-links {
             width: 70%;
             display: flex;
@@ -145,10 +153,10 @@ nav {
 
 @media screen and(max-width: 925px ) {
     body {
-        overflow: hidden;
+        overflow-x: hidden;
     }
     nav {
-        
+        height: 10vh;
     
         .logo {
             
@@ -156,6 +164,7 @@ nav {
     
         .burger {
             display: none;
+
             .line {
                 width: 25px;
                 height: 4px;
@@ -173,6 +182,7 @@ nav {
             background: $color-blue;
             width: 50%;
             padding: 100px 0px;
+            z-index: 5;
 
             flex-direction: column;
             transform: translateX(100%);
@@ -193,12 +203,13 @@ nav {
         .burger {
             display: block;
             cursor: pointer;
-            z-index: 2;
+            z-index: 7;
             
         }
 
         .nav-active {
             transform: translateX(0%);
+            
 
             li {
                 opacity: 1;
@@ -218,9 +229,7 @@ nav {
             .l3 {
                 transform: rotate(45deg) translate(-6px, -7px);
             }
-        }
-
-       
+        }  
     }
 
    

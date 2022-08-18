@@ -1,0 +1,12 @@
+@mixin cont-img {
+    width: 100%;
+    height: 100%;
+    
+}
+
+@mixin img($width, $height) {
+    width: $width;
+    height: $height;
+    object-fit: cover;
+    
+}

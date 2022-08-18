@@ -1,0 +1,32 @@
+.some-costumer-review {
+    width: 100%;
+    height: 600px;
+    background: grey;
+    position: relative;
+    display: flex;
+
+    .some-costumer-review__bg {
+        @include img(100%, 100%);
+    }
+
+    .some-costumer-review__container {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .some-costumer-review__container-left {
+            width: 50%;
+            height: 100%;
+            background: rgba(255, 0, 0, 0.418);
+        }
+
+        .some-costumer-review__container-right {
+            @extend .some-costumer-review__container-left;
+
+            background: rgba(0, 0, 255, 0.356);
+
+        }
+    }
+}

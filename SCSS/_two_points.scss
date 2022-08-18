@@ -1,0 +1,212 @@
+.two-points {
+    width: 100%;
+    height: 600px;
+    background: grey;
+    display: flex;
+    align-items: center;
+    
+    
+   
+
+    .two-points__container {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        
+        
+        .two-points__bg {
+            @include img(100%, 100%)
+          }
+
+          .two-points__container-info {
+            height: 90%;
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: absolute;
+            
+            
+
+
+            .two-points__container-top {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                
+                justify-content: space-between;
+                height: 60%;
+                width: 90%;
+
+                h2 {
+                  color: white;
+                  font-size: $XL;
+                  text-align: center;
+                }
+
+
+              .two-points_container-top-img {
+               width: 250px;
+              }
+
+            }
+        
+            .two-points__container-bottom {
+              width: 90%;
+              height: 40%;
+              
+              display: flex;    
+              justify-content: center;
+              text-align: justify;
+              align-items: center;
+              color: white;
+              font-size: $S;
+            }
+          }
+       
+    }
+}
+
+// Media Querys // ------------------------------
+@media screen and(max-width: 1000px) {
+  .two-points {
+    width: 100%;
+    height: 600px;
+    
+    display: flex;
+    align-items: center;
+    
+    .two-points__container {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        
+        
+        .two-points__bg {
+            @include img(100%, 100%)
+          }
+
+          .two-points__container-info {
+            height: 80%;
+            width: 90%;
+     
+            .two-points__container-top {
+        
+                h2 {
+                  
+                  font-size: 40px;
+                 
+                }
+
+
+              .two-points_container-top-img {
+               width: 200px;
+              }
+            }
+            .two-points__container-bottom {
+           
+            }
+          }     
+    }
+}
+}
+
+@media screen and(max-width: 800px) {
+  .two-points {
+    width: 100%;
+    height: 1200px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    .two-points__container {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        
+        
+        .two-points__bg {
+            @include img(100%, 100%)
+          }
+
+          .two-points__container-info {
+            height: 80%;
+            width: 90%;
+     
+            .two-points__container-top {
+        
+                h2 {
+                  
+                  font-size: 40px;
+                 
+                }
+
+
+              .two-points_container-top-img {
+               width: 200px;
+              }
+            }
+            .two-points__container-bottom {
+           
+            }
+          }     
+    }
+}
+}
+
+@media screen and(max-width: 500px) {
+  .two-points {
+    width: 100%;
+    height: 1000px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    .two-points__container {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        
+        
+        .two-points__bg {
+            @include img(100%, 100%)
+          }
+
+          .two-points__container-info {
+            height: 90%;
+            width: 90%;
+     
+            .two-points__container-top {
+              height: 60%;
+                h2 {
+
+                  font-size: 40px;
+                 
+                }
+
+
+              .two-points_container-top-img {
+               width: 200px;
+              }
+            }
+            .two-points__container-bottom {
+              height: 40%;
+            }
+          }     
+    }
+}
+}

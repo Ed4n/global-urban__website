@@ -10,3 +10,25 @@
     object-fit: cover;
     
 }
+
+@mixin title($position, $width) {
+    width: $width;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: $position;
+    justify-content: space-between;
+    color: $color-blue;
+
+   @media screen and(max-width: 425px) {
+    font-size: $L;
+   }
+    
+}
+
+@mixin tittle-line($line-lenght) {
+     width: $line-lenght;
+     height: 3px;
+     align-self: flex-start;
+     background: $color-blue;
+}

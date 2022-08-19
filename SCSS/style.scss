@@ -2,16 +2,18 @@
 @import "./vars";
 @import "./assets";
 @import "./mixins";
+@import "./components";
 @import "./nav";
 @import "./header";
 @import "./DVBE";
 @import "./two-points";
-@import "./components";
+
 @import './some-costumer-review';
 
 body {
   max-width: 1920px;
   min-width: 340px;
+  font-family: $font-family-1;
 }
 
 h2 {

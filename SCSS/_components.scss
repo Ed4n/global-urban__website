@@ -1,0 +1,228 @@
+.client-review-dialog {
+  width: 700px;
+  height: 300px;
+
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  .client-review-dialog__top {
+    height: 70%;
+    width: 90%;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    img {
+      @include img(100%, 100%);
+      object-fit: contain;
+    }
+
+    p {
+      position: absolute;
+      width: 80%;
+      align-self: flex-start;
+      margin-top: 40px;
+      margin-left: 50px;
+      color: white;
+      font-size: $S;
+    }
+  }
+
+  .client-review-dialog__img {
+    width: 200px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+  }
+
+  .client-review-dialog__bottom {
+    height: 30%;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    .client-review-dialog__bottom__cont-name {
+      text-align: right;
+      margin-left: 70px;
+      margin-top: 10px;
+      span {
+        font-size: $M;
+        color: $color-orange;
+        font-weight: 700;
+      }
+
+      font-size: $S;
+      color: $color-grey;
+    }
+  }
+}
+
+// Media Querys // ------------------------
+@media screen and(max-width: 1500px) {
+  .client-review-dialog {
+    width: 540px;
+    height: 250px;
+    .client-review-dialog__top {
+      height: 70%;
+      width: 90%;
+      p {
+        position: absolute;
+        width: 80%;
+        align-self: flex-start;
+        margin-top: 20px;
+        margin-left: 50px;
+        color: white;
+        font-size: $XS;
+      }
+    }
+
+    .client-review-dialog__img {
+      width: 140px;
+    }
+
+    .client-review-dialog__bottom {
+      .client-review-dialog__bottom__cont-name {
+        margin-left: 80px;
+        margin-top: 5px;
+        span {
+          font-size: $S;
+        }
+
+        font-size: $XS;
+      }
+    }
+  }
+}
+
+@media screen and(max-width: 542px) {
+  .client-review-dialog {
+    width: 440px;
+    height: 300px;
+
+    .client-review-dialog__top {
+      height: 70%;
+      width: 90%;
+
+      img {
+        @include img(100%, 100%);
+        border-radius: 25px;
+      }
+
+      p {
+        position: absolute;
+        width: 80%;
+        align-self: flex-start;
+        margin-top: 20px;
+        margin-left: 50px;
+        color: white;
+        font-size: $XS;
+      }
+    }
+
+    .client-review-dialog__img {
+      width: 130px;
+    }
+
+    .client-review-dialog__bottom {
+      .client-review-dialog__bottom__cont-name {
+        margin-left: 0px;
+        margin-top: 5px;
+        span {
+          font-size: $S;
+        }
+
+        font-size: $XS;
+      }
+    }
+  }
+}
+
+@media screen and(max-width: 445px) {
+  .client-review-dialog {
+    width: 380px;
+    height: 300px;
+
+    .client-review-dialog__top {
+      height: 70%;
+      width: 90%;
+
+      img {
+        @include img(100%, 100%);
+        border-radius: 25px;
+      }
+
+      p {
+        position: absolute;
+        width: 80%;
+        align-self: flex-start;
+        margin-top: 20px;
+        margin-left: 20px;
+        color: white;
+        font-size: $XS;
+      }
+    }
+
+    .client-review-dialog__img {
+      width: 130px;
+    }
+
+    .client-review-dialog__bottom {
+      .client-review-dialog__bottom__cont-name {
+        margin-right: 30px;
+        margin-top: 5px;
+        span {
+          font-size: $S;
+        }
+
+        font-size: $XS;
+      }
+    }
+  }
+}
+
+@media screen and(max-width: 400px) {
+    .client-review-dialog {
+      width: 300px;
+      height: 370px;
+  
+      .client-review-dialog__top {
+        height: 70%;
+        width: 100%;
+  
+        img {
+          @include img(100%, 100%);
+          border-radius: 25px;
+        }
+  
+        p {
+          position: absolute;
+          width: 90%;
+          align-self: flex-start;
+          margin-top: 20px;
+          margin-left: 20px;
+          color: white;
+          font-size: $XS;
+        }
+      }
+  
+      .client-review-dialog__img {
+        width: 130px;
+      }
+  
+      .client-review-dialog__bottom {
+        justify-content: flex-start;
+        .client-review-dialog__bottom__cont-name {
+          margin-left: 30px;
+          margin-top: 5px;
+          span {
+            font-size: $S;
+          }
+  
+          font-size: $XS;
+        }
+      }
+    }
+  }

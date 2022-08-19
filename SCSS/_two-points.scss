@@ -1,6 +1,6 @@
 .two-points {
     width: 100%;
-    height: 600px;
+    height: 700px;
     background: grey;
     display: flex;
     align-items: center;
@@ -22,7 +22,7 @@
           }
 
           .two-points__container-info {
-            height: 90%;
+            height: 80%;
             width: 90%;
             display: flex;
             flex-direction: column;
@@ -38,40 +38,47 @@
                 align-items: center;
                 
                 justify-content: space-between;
-                height: 60%;
-                width: 90%;
+                height: 65%;
+                width: 0%;
 
                 h2 {
                   color: white;
                   font-size: $XL;
                   text-align: center;
+                  
                 }
 
 
               .two-points_container-top-img {
-               width: 250px;
+               width: 200px;
               }
 
             }
         
             .two-points__container-bottom {
               width: 90%;
-              height: 40%;
+              height: 35%;
               
               display: flex;    
               justify-content: center;
               text-align: justify;
               align-items: center;
               color: white;
-              font-size: $S;
+              font-size: $M;
             }
+
+            .--compressed {
+              width: 200px;
+              
+            }
+          
           }
        
     }
 }
 
 // Media Querys // ------------------------------
-@media screen and(max-width: 1000px) {
+@media screen and(max-width: 1300px) {
   .two-points {
     width: 100%;
     height: 600px;
@@ -110,7 +117,7 @@
               }
             }
             .two-points__container-bottom {
-           
+              font-size: $S;
             }
           }     
     }
@@ -167,7 +174,7 @@
 @media screen and(max-width: 500px) {
   .two-points {
     width: 100%;
-    height: 1000px;
+    height: 1200px;
     
     display: flex;
     flex-direction: column;

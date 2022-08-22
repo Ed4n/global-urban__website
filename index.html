@@ -181,6 +181,7 @@
 
     <!-- Footer // ======================================= -->
     <footer>
+      <!-- Footer Top // -------------------------------  -->
       <section class="footer__top">
         <div class="footer__top-cont-title">
           <h1>
@@ -220,47 +221,163 @@
         </div>
       </section>
 
+      <!-- Footer Bottom // --------------------------------------------  -->
       <section class="footer__bottom">
+        <!-- Bottom Left //  -->
         <div class="footer__bottom-left">
           <div class="footer__bottom-left-tittle">
             <h2>
-              CONTACT US <br>
+              CONTACT US <br />
               <span>How we can help you?</span>
             </h2>
           </div>
           <form class="footer__form" action="">
-            <input type="text" name="name" id="" placeholder="Your Name...">
-           
+            <input type="text" name="name" id="" placeholder="Your Name..." />
+
+            <!-- you are from? // -->
             <div class="footer__form-contRadio">
-              <h4>Radio Test</h4>
+              <h4>You are from a:</h4>
               <div class="footer__form-radio">
                 <div class="footer__form-individualRadio">
-                  <input type="radio" id="city" name="fav_language" value="city">
-                    <label class="radio-label" for="city">City/Municipality</label>
+                  <input
+                    type="radio"
+                    id="city"
+                    name="fav_language"
+                    value="city"
+                  />
+                   
+                  <label class="radio-label" for="city"
+                    >City/Municipality</label
+                  >
                 </div>
 
                 <div class="footer__form-individualRadio">
-                  <input type="radio" id="company" name="fav_language" value="company">
-                    <label class="radio-label"  for="company">Company</label>
+                  <input
+                    type="radio"
+                    id="company"
+                    name="fav_language"
+                    value="company"
+                  />
+                    <label class="radio-label" for="company">Company</label>
                 </div>
 
                 <div class="footer__form-individualRadio">
-                  <input type="radio" id="profit" name="fav_language" value="profit">
+                  <input
+                    type="radio"
+                    id="profit"
+                    name="fav_language"
+                    value="profit"
+                  />
                     <label class="radio-label" for="profit">Non-Profit</label>
                 </div>
 
                 <div class="footer__form-individualRadio">
-                  <input type="radio" id="other" name="fav_language" value="other">
+                  <input
+                    type="radio"
+                    id="other"
+                    name="fav_language"
+                    value="other"
+                  />
                     <label class="radio-label" for="other">Other</label>
                 </div>
-               
               </div>
-
-              
             </div>
+
+            <!-- Prefer contacted? // -->
+            <div class="footer__form-contRadio">
+              <h4>How would you prefer to be contacted?</h4>
+              <div class="footer__form-radio">
+                <div class="footer__form-individualRadio">
+                  <input type="radio" id="phone" name="contact" value="phone" />
+                    <label class="radio-label" for="phone">phone</label>
+                </div>
+
+                <div class="footer__form-individualRadio">
+                  <input type="radio" id="email" name="contact" value="email" />
+                    <label class="radio-label" for="email">email</label>
+                </div>
+              </div>
+            </div>
+
+            <!-- At what time? // -->
+            <div class="footer__form-contRadio">
+              <h4>When?</h4>
+              <div class="footer__form-radio">
+                <div class="footer__form-individualRadio">
+                  <input
+                    type="radio"
+                    id="Morning"
+                    name="time"
+                    value="Morning"
+                  />
+                    <label class="radio-label" for="Morning">Morning</label>
+                </div>
+
+                <div class="footer__form-individualRadio">
+                  <input
+                    type="radio"
+                    id="Afternoon"
+                    name="time"
+                    value="Afternoon"
+                  />
+                    <label class="radio-label" for="Afternoon">Afternoon</label>
+                </div>
+              </div>
+            </div>
+
+            <!-- Email // -->
+            <input
+              class="form--margin"
+              type="text"
+              name="email"
+              id=""
+              placeholder="Leave your email or phone here..."
+            />
+
+            <textarea
+              class="footer__form-text-area form--margin"
+              name="text-area"
+              id=""
+              placeholder="How can we help you?"
+            ></textarea>
+
+            <input type="submit" value="Submit" />
           </form>
         </div>
-        <div class="footer__bottom-right"></div>
+
+        <!-- Bottom Right //  -->
+        <div class="footer__bottom-right">
+
+          <div class="footer__bottom-right-container">
+            <div class="footer__bottom-right-info">
+                <div class="footer__right-info-box">
+                  <img src="./img/home/GUS_Home_13.png" alt="">
+                  <h3>Let's Talk<br>
+                  <span>89344309</span>
+                  </h3>
+                </div>
+
+                <div class="footer__right-info-box info-box--large1">
+                  <img src="./img/home/GUS_Home_14.png" alt="">
+                  <h3>More Info<br>
+                  <span>info@gloabl-urban.com</span>
+                  </h3>
+                </div>
+
+                <div class="footer__right-info-box info-box--large2">
+                  <img src="./img/home/GUS_Home_15.png" alt="">
+                  <h3>Adress<br>
+                  <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+                  </h3>
+                </div>
+            </div>
+  
+            <div class="footer__bottom-right-map">
+              
+            </div>
+          </div>
+        
+        </div>
       </section>
     </footer>
   </body>

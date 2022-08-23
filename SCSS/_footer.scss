@@ -192,14 +192,14 @@ footer {
         }
 
         input[type="submit"] {
-          width: 90%;
-          height: 90px;
+          width: 70%;
+          height: 70px;
           margin-top: 30px;
-          border: solid $color-orange 7px;
+          border: solid $color-orange 4px;
           border-radius: 12px;
           background: none;
           color: $color-orange;
-          font-size: $XL;
+          font-size: $X;
           font-weight: 900;
           transition: all 0.3s;
 
@@ -207,11 +207,13 @@ footer {
             background: $color-orange;
             color: rgba(255, 255, 255, 0.815);
             transform: scale(1.04);
+            cursor: pointer;
           }
         }
       }
     }
 
+    // Bottom Right // ----------------------
     .footer__bottom-right {
       width: 50%;
       height: 100%;
@@ -241,18 +243,18 @@ footer {
 
           .footer__right-info-box {
             display: flex;
-            width: 290px;
+            width: 300px;
             height: 90px;
 
             gap: 20px;
 
             h3 {
-              font-size: $L;
+              font-size: $M;
               color: white;
 
               span {
                 font-weight: 200;
-                font-size: $M;
+                font-size: $S;
                 color: rgba(255, 255, 255, 0.651);
               }
             }
@@ -281,7 +283,7 @@ footer {
 }
 
 // Media Querys // ----------------------
-@media screen and(max-width: 1570px) {
+@media screen and(max-width: 1600px) {
 
     footer {
 

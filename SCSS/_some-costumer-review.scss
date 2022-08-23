@@ -42,7 +42,7 @@
           @include title(flex-start, 400px);
 
           .some-costumer-review__title-line {
-            @include tittle-line(60%);
+            @include tittle-line(50%);
           }
         }
 
@@ -69,7 +69,7 @@
           height: 300px;
           display: flex;
           flex-direction: column;
-          gap: 10px;
+          gap: 5px;
           align-items: center;
           justify-content: center;
 

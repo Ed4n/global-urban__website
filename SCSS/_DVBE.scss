@@ -35,6 +35,7 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    
 
     .DVBE__contLogo-urban {
       display: flex;
@@ -55,6 +56,8 @@
       font-family: $font-family-0;
       color: white;
       z-index: 0;
+      text-align: start;
+      width: 95%;
 
       span {
         font-weight: 200;
@@ -97,7 +100,6 @@
       h2 {
         z-index: 0;
         font-size: $L;
-        margin-right: 20px;
       }
     }
   }
@@ -129,7 +131,7 @@
       right: 5px;
 
       .DVBE__contLogo-urban {
-        width: 400px;
+        width: 380px;
 
         .DVBE__logo-urban {
           width: 300px;
@@ -142,7 +144,6 @@
       h2 {
         z-index: 0;
         font-size: $L;
-        margin-right: 20px;
       }
     }
   }
@@ -171,19 +172,18 @@
       right: 5px;
 
       .DVBE__contLogo-urban {
-        width: 330px;
+        width: 315px;
         .DVBE__logo-urban {
           width: 250px;
         }
         .DVBE__logo-dvbe {
-          width: 60px;
+          width: 70px;
         }
       }
 
       h2 {
         z-index: 0;
         font-size: $M;
-        margin-right: 15px;
       }
     }
   }
@@ -212,19 +212,17 @@
       right: 5px;
 
       .DVBE__contLogo-urban {
-        width: 330px;
         .DVBE__logo-urban {
           width: 250px;
         }
         .DVBE__logo-dvbe {
-          width: 60px;
+          
         }
       }
 
       h2 {
         z-index: 0;
         font-size: $S;
-        margin-right: 15px;
       }
     }
   }
@@ -239,10 +237,11 @@
       transform: translate(-13%, 10%);
       width: 500px;
       height: 500px;
+      display: none;
     }
 
     .DVBE-filter {
-      background: #1e2053ce;
+      display: none;
       
     }
 
@@ -261,12 +260,12 @@
       margin: 0px;
 
       .DVBE__contLogo-urban {
-        width: 330px;
+        width: 350px;
         .DVBE__logo-urban {
           width: 250px;
         }
         .DVBE__logo-dvbe {
-          width: 60px;
+          width: 100px;
         }
       }
 
@@ -290,7 +289,7 @@
           width: 200px;
         }
         .DVBE__logo-dvbe {
-          width: 50px;
+          width: 70px;
         }
       }
     }

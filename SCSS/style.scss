@@ -19,3 +19,28 @@ body {
 h2 {
     font-size: 35px;
 }
+
+p::selection {
+  background-color: $color-orange;
+  color: white;
+}
+
+h1::selection {
+  background-color: $color-orange;
+  color: white;
+}
+
+h2::selection {
+  background-color: $color-orange;
+  color: white;
+}
+
+h3::selection {
+  background-color: $color-orange;
+  color: white;
+}
+
+span::selection {
+  background-color: $color-orange;
+  color: white;
+}
